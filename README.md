@@ -1,3 +1,4 @@
 # Clustering_Algorithm
+This project demonstrates a data clustering and visualization approach for fruit classification based on radius and weight measurements. Here, data is loaded from a CSV file containing fruit class, radius, and weight values. Missing radius or weight values are replaced with the class median value. Then, the data is normalized to a range of 0 to 1 for both radius and weight features.
 
-In this project we're implementing a single-pass clustering algorithm in Python. The algorithm is a simplified version of the k-Means algorithm
+After data preparation, the code performs single-pass clustering to group fruits into different clusters. The clustering algorithm utilizes a distance threshold to determine cluster membership. Here, the distance between two fruits is calculated using the squared Euclidean distance. Fruits closer than the specified threshold are assigned to the same cluster, and the cluster's centroid (average radius and weight) is recalculated to incorporate the newly added fruit. Finally, the code visualizes the clusters using a scatter plot, where different colors and markers represent distinct fruit classes.
